@@ -12,14 +12,19 @@
 
 <body>
     <header class="header">
-        <a href="#" class="logo">Malate Literary Folio</a>
+        <a href="index.html" class="logo">Malate Literary Folio</a>
         <nav class="navbar">
-            <a href="index.html">About Us</a>
-            <a href="contact.html" class="active">Contact Us</a>
+            <a href="index.html" class="active">About Us</a>
+            <a href="contact.html">Contact Us</a>
             <a href="folio_library.html">Folio Library</a>
-            <!-- <a href="featured_works.html">Featured Works</a> -->
         </nav>
+        <div class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </header>
+
 
     <main>
         <section class="folio-intro">
@@ -67,6 +72,15 @@
             <a href="#top" class="to-top">To the top ↑</a>
         </div>
     </footer>
+
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navbar = document.querySelector(".navbar");
+
+        menuToggle.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+        });
+    </script>
 
 </body>
 
