@@ -112,6 +112,7 @@ main, section {
     padding: 0 20px;
     font-size: 1.8rem;
     margin-bottom: 20px;
+    white-space: nowrap; 
 }
 
 .folio-year h2::before,
@@ -126,11 +127,26 @@ main, section {
 
 .folio-year h2::before {
     right: 100%;
+    margin-right: 10px; 
 }
 
 .folio-year h2::after {
     left: 100%;
+    margin-left: 10px; 
 }
+
+@media (max-width: 600px) {
+    .folio-year h2 {
+        font-size: 1.3rem;
+        padding: 0 10px;
+    }
+
+    .folio-year h2::before,
+    .folio-year h2::after {
+        width: 40%; 
+    }
+}
+
 
 /* -------------------------------
    Portfolio Gallery
